@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="../netflixclone/css/style.css">
+  </head>
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+
+}
+.row__poster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    transition: transform 550ms;
+    margin-right: 10px;
+}
+.row__posters{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px;
+
+}
+.row__poster:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+
+}
+.row__posters::-webkit-scrollbar{
+  display: none;
+
+}
+.row{
+  color: white;
+  margin-left: 20px;
+  font-family: sans-serif;
+}
+.banner{
+  background: url(money2.png);
+  background-size: cover;
+  color: white;
+  object-fit: contain;
+  height: 550px;
+}
+.banner__contents{
+  margin-left: 80px;
+
+}
+.banner__title{
+  font-size: 50px;
+  font-weight: 200;
+  margin-left: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family:Impact;
+
+
+}
+.banner__description{
+width: 45rem;
+line-height: 1.4;
+padding-top: 10px;
+font-size: .7rem;
+max-width: 350px;
+height: 180px;
+margin-left: 10px;
+font-family: Arial;
+}
+.banner__button{
+  color: white;
+  border-radius: 5px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  margin-right: 10px;
+  margin-left: 14px;
+  border: none;
+  outline: none;
+  background-color: rgb(83, 64, 64);
+  cursor: pointer;
+}
+.nav_logo{
+  position: fixed;
+  width: 90px;
+  margin-left: 0px;
+  margin-top: 16px;
+  object-fit: contain;
+  
+}
+.nav{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  
+}
+.banner__fade{
+  background: linear-gradient(180deg,transparent,rgb(0, 0, 0));
+  height: 25.0rem;
+  margin-top: 10px;
+}
+
+
+  </style>
+  <body>
+    <!-- header -->
+    <div class="nav">
+      
+      <img src="netlogo1.jpg" class="nav_logo" />
+     
+      
+    </div>
+    <!-- banner  section-->
+    
+    <div class="banner">
+      <div class="banner__contents">
+        <h1 class="banner__title">MONEY HEIST</h1>
+      </div>
+      <div class="banner__buttons">
+        <button class="banner__button">Play</button>
+        <button class="banner__button">My List</button>
+      </div>
+      <div class="banner__description">An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.</div>
+      <div class="banner__fade"></div>
+    </div>
+
+    <!-- netflix orignal -->
+    <div class="row">
+      
+      <h2>Netflix</h2>
+      <div class="row__posters" >
+        <img src="download(1).jpg" class="row__poster" />
+        <img src="download(2).jpg" class="row__poster" />
+        <img src="download(3).jpg" class="row__poster" />
+        <img src="download (4).jpg" class="row__poster" />
+        <img src="download (5).jpg" class="row__poster" />
+        <img src="download (20).jpg" class="row__poster" />
+        <img src="pg7.jpg" class="row__poster" />
+        <img src="pg8.jpg" class="row__poster" />
+        <img src="download9.jpg" class="row__poster" />
+        <img src="download(10).jpg" class="row__poster" />
+        <img src="download (11).jpg" class="row__poster" />
+        <img src="download (12).jpg" class="row__poster" />
+        
+      </div>
+    </div>
+    <div class="row">
+      <h2>Trending Now</h2>
+      <div class="row__posters">
+        <img src="download (13).jpg" class="row__poster" />
+        <img src="download (14).jpg" class="row__poster" />
+        <img src="download (15).jpg" class="row__poster" />
+        <img src="download (16).jpg" class="row__poster" />
+        <img src="download (17).jpg" class="row__poster" />
+        <img src="download (18).jpg" class="row__poster" />
+        <img src="download (11).jpg" class="row__poster" />
+        <img src="download (20).jpg" class="row__poster" />
+        <img src="pg8.jpg" class="row__poster" />
+        <img src="download (13).jpg" class="row__poster" />
+        <img src="download(2).jpg" class="row__poster" />
+        <img src="download (14).jpg" class="row__poster" />
+        
+      </div>
+    </div>
+    <!-- top rated -->
+    <div class="row">
+      <h2>Top rated</h2>
+        <div class="row__posters">
+            <img src="download (16).jpg" class="row__poster" />
+            <img src="pg8.jpg" class="row__poster" />
+            <img src="download (5).jpg" class="row__poster" />
+            <img src="download (13).jpg" class="row__poster" />
+            <img src="download9.jpg" class="row__poster" />
+            <img src="download (19).jpg" class="row__poster" />
+            <img src="download(3).jpg" class="row__poster" />
+            <img src="download(2).jpg" class="row__poster" />
+            <img src="download (14).jpg" class="row__poster" />
+            <img src="download(3).jpg" class="row__poster" />
+            <img src="download (15).jpg" class="row__poster" />
+            <img src="download (4).jpg" class="row__poster" />
+                        
+          </div>
+    </div>
+    <!-- action movies -->
+    <div class="row">
+      <h2>Action movies</h2>
+        <div class="row__posters">
+            <img src="download(3).jpg" class="row__poster" />
+        <img src="download (20).jpg" class="row__poster" />
+        <img src="download(1).jpg" class="row__poster" />
+        <img src="download (18).jpg" class="row__poster" />
+        <img src="download(2).jpg" class="row__poster" />
+        <img src="download (14).jpg" class="row__poster" />
+        <img src="download(3).jpg" class="row__poster" />
+        <img src="download (17).jpg" class="row__poster" />
+        <img src="download(10).jpg" class="row__poster" />
+        <img src="pg7.jpg" class="row__poster" />
+        <img src="download (12).jpg" class="row__poster" />
+        <img src="download(1).jpg" class="row__poster" />
+        
+          </div>
+    </div>
+    <!-- comedy movies -->
+    <div class="row">
+      <h2>Comedy movies</h2>
+      <div class="row__posters">
+        <img src="download (18).jpg" class="row__poster" />
+        <img src="download(2).jpg" class="row__poster" />
+        <img src="download (15).jpg" class="row__poster" />
+        <img src="download(3).jpg" class="row__poster" />
+        <img src="download (12).jpg" class="row__poster" />
+        <img src="download (19).jpg" class="row__poster" />
+        <img src="pg8.jpg" class="row__poster" />
+        <img src="download (20).jpg" class="row__poster" />
+        <img src="download (16).jpg" class="row__poster" />
+        
+        
+      </div>
+    </div>
+    <!-- horror movies -->
+    <div class="row">
+      <h2>Horror movies</h2>
+        <div class="row__posters">
+            <img src="download(10).jpg" class="row__poster" />
+            <img src="download(1).jpg" class="row__poster" />
+            <img src="download (11).jpg" class="row__poster" />
+            <img src="download(3).jpg" class="row__poster" />
+            <img src="download (20).jpg" class="row__poster" />
+            <img src="download (14).jpg" class="row__poster" />
+            <img src="pg7.jpg" class="row__poster" />
+            <img src="download (20).jpg" class="row__poster" />
+            <img src="download (18).jpg" class="row__poster" />
+            <img src="download (16).jpg" class="row__poster" />
+            <img src="download (13).jpg" class="row__poster" />
+            <img src="download (17).jpg" class="row__poster" />
+                        
+          </div>
+    </div>
+  </body>
+</html>
